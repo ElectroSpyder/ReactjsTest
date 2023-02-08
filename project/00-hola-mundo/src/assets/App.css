@@ -1,33 +1,54 @@
-article{
+.tw-followCard{
   display: flex;
   align-items: center;
-  color: #FFF;
+  color: #300303;
   font-size: .8rem;
 }
 
-article header{
+.tw-followCard-header{
   display: flex;
   align-items: center;
   gap: 4px;
 }
-article header div{
+
+.tw-followCard-info{
   flex-direction: column;
+  display: flex;
 }
 
-article header span{
+.tw-followCard-infoUserName{
   opacity: .6;
 }
 
-article img{
+.tw-followCar-avatar{
   width: 48PX;
   height: 48PX;
   border-radius: 1000PX;
 }
 
-article button{
+.tw-followCard-button{
   margin-left: 16PX;
   border: 0;
   border-radius: 999PX;
   padding: 6PX 16PX;
   font-weight: bold;
+  border: 1px solid yellow;
+  transition: .3s ease background-color;
+}
+
+.tw-followCard-button.is-following{
+   border: 1px solid rgb(57, 19, 194);
+   
+   transition: .3s ease background-color;
+}
+
+.tw-followCard-button :hover{
+  background-color: rgb(72, 255, 0);
+  transition: .3s ease background-color;
+}
+
+.tw-followCard-button.is-following :hover{
+  border: 1px solid red;
+  background-color: rgb(13, 134, 39);
+  transition: .3s ease background-color;
 }
